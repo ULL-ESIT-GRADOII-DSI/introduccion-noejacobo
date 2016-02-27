@@ -3,9 +3,9 @@ function calculate() {
   var result;
   var temp = original.value;
   var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-  
+
   var m = temp.match(regexp);
-  
+
   if (m) {
     var num = m[1];
     var type = m[2];
@@ -19,6 +19,9 @@ function calculate() {
       result = result.toFixed(1)+" Celsius"
     }
     converted.innerHTML = result;
+
+    console.log(result.toFixed(1));
+    //alert(result);//mesaje de alerta
   }
   else {
     converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
