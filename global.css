@@ -1,11 +1,23 @@
-th, td      {
+th  {
+               color: #FFFFFF;
                vertical-align: top;
                text-align: right;
                font-size:large;
-               // border: 1px solid black;
+               // border: 1px solid white;
+      }
+
+
+td  {
+               /*color: #FFFFFF;*/
+               vertical-align: top;
+               text-align: right;
+               font-size:large;
+               // border: 1px solid white;
             }     /* Don't center table cells  */
-#converted  { color: red; font-weight: bold; font-size:large;          }     /* Calculated values in bold */
+
+#converted  { color: red; font-weight: bold; font-size:large;     /*convertimos la etiqueta converted a roja*/     }     /* Calculated values in bold */
 input       {
+
               text-align: right;       /* Align input to the right  */
               border: none;
               border-radius: 20px 20px 20px 20px;
@@ -13,17 +25,54 @@ input       {
               font-size:large;       }
 body
 {
- background-color:#b0c4de;  /* blue */
+ /*background-color:#b0c4de;  /* blue*/
+ background-color: rgba(0, 0, 0, 0.7);
+ background-image: url("img/fondo.png");
+  /*background-image: url("/img/fondo.png");*/
  font-size:large;
- font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+ /*font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;*/
 }
 
 h1 {
     font-weight: normal;
-    font-family: "Brush Script MT", cursive;
-    background: #3C5681;
+    font-family: "Arial", cursive;
+    font-style: italic;
+    /*background: #3C5681;*/
+    background: rgba(255, 171, 0, 1);
     padding: 5px 15px;
     color: white;
     display:inline-block;
     border-radius: 10px 10px 10px 10px;
+}
+
+
+
+table{
+ border: 1px solid #000;
+ border-collapse: separate;
+ border-spacing: 5px;
+ background: rgba(39, 131, 255, 0.4);
+    /*color: #fff;
+    height: : 80%;
+    border: 1px;
+    border-spacing: 3px;
+    background: rgba(39, 131, 255, 0.4);
+*/
+}
+
+font{
+  text-align: top;
+}
+
+.movim {
+padding-right: 300px;
+
+}
+
+.movim1{
+  padding-left: 300px;
+}
+
+.color1{
+  color: #FFFFFF;
 }
