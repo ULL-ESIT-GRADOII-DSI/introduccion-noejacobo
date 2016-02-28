@@ -2,7 +2,7 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
+  var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])((e|el|els|elsi|elsiu|elsiu|elsius))?\s*$/i;
 
   var m = temp.match(regexp);
 
