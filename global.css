@@ -60,9 +60,15 @@ table{
 */
 }
 
+font{
+  text-align: top;
+}
+
 .movim {
 padding-right: 300px;
+
 }
+
 .movim1{
   padding-left: 300px;
 }
