@@ -2,11 +2,12 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])((e|el|els|elsi|elsiu|elsiu|elsius))?\s*$/i;
+  var regexp = /^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([fFcC])(e|el|els|elsi|elsiu|elsiu|elsius)?\s*$/;
 
   var m = temp.match(regexp);
 
   if (m) {
+
     var num = m[1];
     var type = m[2];
     num = parseFloat(num);
@@ -19,9 +20,13 @@ function calculate() {
       result = result.toFixed(1)+" Celsius"
     }
     converted.innerHTML = result;
+    //document.getElementByTagName("converted").innerHTML = result;
 
-    console.log(result.toFixed(1));
-    //alert(result);//mesaje de alerta
+
+    //console.log(result.toFixed(1));
+
+
+    alert(result);//mesaje de alerta
   }
   else {
     converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
