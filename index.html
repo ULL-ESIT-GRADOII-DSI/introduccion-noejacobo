@@ -9,16 +9,60 @@
      <script type="text/javascript" src="temperature.js"></script>
   </head>
   <body>
-    <h1>Temperature Converter</h1>
-    <table>
+
+    <center><div style="border-radius: 5px;"><h1>Temperature Converter</h1></center></div>
+    <div class="color1"><p><center>El <strong>CONVERSOR DE TEMPERATURA</strong> es una página<br> donde
+      podemos introducir tanto grados Farenheit<br> como Celsius para su
+      conversion: </center>
+    </p>
+  </div class="color1">
+    <br><br>
+    <center><table>
       <tr>
-        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-        <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
+        <th>Enter Temperature (examples: 32F, 45C, -2.5f): &nbsp &nbsp</th>
+        <td>
+          <!--input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"-->
+          <form id="formulario" onsubmit="return calculate();">
+          <input id="original"
+                 placeholder="32F"
+                 size="50"
+                 title = "Escribe un número seguido de una de las letras 'F' o 'C'"
+                 pattern="^\s*([-+]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([fFcC])(e|el|els|elsi|elsiu|elsiu|elsius|a|ar|are|aren|arenh|arenhe|arenhei|arenheit)?\s*$"
+          />
+        </form>
+        </td>
       </tr>
+
       <tr>
         <th>Converted Temperature:</th>
         <td><span class="output" id="converted"></span></td>
       </tr>
-    </table>
+    </table></center>
+
+  </p></div><center><img class="movim" src= "http://integral-salud.com/wp-content/uploads/2016/01/calor-extremo-900x400_c.jpg" style="float:right" width="750" height="150" ></center>
+    <br> <br> <br> <br> <br> <br><br> <br> <br>
+
+
+    <center><div style="border-radius: 5px;"><h1>Páginas Personales</h1></center></div>
+
+    <!-- -->
+    <!-- -->
+<!--
+    <div class="movim1">
+      <button id="boton_noe" name="boton" type="submit"><a href="http://dsi1516.github.io/Practica1"><img src="img/minion.jpg" width="200" height="200"><font face="Comic Sans MS" color="yellow">Página Personal</font></a> </button>
+    </div>
+
+    <div class="movim1">
+      <button name="boton" type="submit"><a href="http://alu0100836059.github.io/pagina_personal"><img src="https://avatars2.githubusercontent.com/u/14941693?v=3&s=460" width="200" height="200"><font face="Comic Sans MS" color="yellow">Página Personal</font></a> </button>
+    </div>
+-->
+<center><div style="background: url(https://avatars2.githubusercontent.com/u/14941693?v=3&s=460) no-repeat;width:100px;height:150px">
+<a style="color: red;"href="http://alu0100836059.github.io/pagina_personal">Jacobo</a>
+</div>
+
+<div style="background:url(http://www.gahe.com/downloadgames/Minion-Jigsaw-Puzzle/100x100.jpg) no-repeat;width:100px;height:100px;">
+<a style="color: white;"href="http://dsi1516.github.io/Practica1">Noé</a>
+</div></center>
+
   </body>
 </html>
